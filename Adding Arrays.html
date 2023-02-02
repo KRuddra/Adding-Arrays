@@ -1,0 +1,31 @@
+<html>
+    <heading></heading>
+    <body>
+        <script>
+            let numaricArray = [];
+            var size = parseFloat(prompt("Enter the size of the Array: "));
+            Function1(numaricArray, size);
+            for(i=0; i<size; i++){
+                document.write("Element [" + i + "] = " + numaricArray[i] + "<br>");
+            }
+            Function2(numaricArray, size)
+            for(i=0; i<size; i++){
+                document.write("Your new elements are" + "<br>" + " [" + i + "] = " + numaricArray[i] + "<br>")
+            }
+
+            function Function1(a, b){
+                for(i = 0; i < b; i++){
+                    a[i] = parseFloat(prompt("Enter the array elements:"))
+                }
+                    
+            }
+            
+            function Function2(a,b){
+                for(i=0; i<b; i++)
+                    a[i]= (a[i] + 10)* 3 
+            }
+
+        
+        </script>
+    </body>
+</html>
